@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ScamShield AI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Plus Jakarta Sans -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+
+    <!-- ======================================================
+         MAIN APPLICATION
+    ======================================================= -->
+
+    <main class="app-container">
+
+
+        <!-- ==================================================
+             NAVIGATION
+        =================================================== -->
+
+        <header class="glass-nav">
+
+            <div class="brand">
+
+                <div class="shield-icon">
+                    🛡️
+                </div>
+
+                <div class="brand-title">
+                    ScamShield AI
+                </div>
+
+            </div>
+
+
+            <div class="nav-badge">
+                GLASS ENGINE 2.0
+            </div>
+
+        </header>
+
+
+
+        <!-- ==================================================
+             HERO SECTION
+        =================================================== -->
+
+        <section class="hero">
+
+            <h1>
+                Threat Detection Suite
+            </h1>
+
+            <p>
+                Paste any message or URL below to run real-time
+                heuristic inspection.
+            </p>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             SAMPLE PAYLOADS
+        =================================================== -->
+
+        <section class="samples">
+
+            <div class="section-label">
+                SAMPLE PAYLOADS
+            </div>
+
+
+            <div class="sample-grid">
+
+
+                <!-- PHISHING -->
+
+                <button
+                    class="sample-button"
+                    id="phishingBtn">
+
+                    <span class="sample-icon">
+                        🚨
+                    </span>
+
+                    <span>
+                        Phishing Text
+                    </span>
+
+                </button>
+
+
+
+                <!-- GIFT SCAM -->
+
+                <button
+                    class="sample-button"
+                    id="giftBtn">
+
+                    <span class="sample-icon">
+                        🎁
+                    </span>
+
+                    <span>
+                        Gift Scam
+                    </span>
+
+                </button>
+
+
+
+                <!-- SAFE OTP -->
+
+                <button
+                    class="sample-button"
+                    id="safeBtn">
+
+                    <span class="sample-icon">
+                        ✅
+                    </span>
+
+                    <span>
+                        Safe OTP
+                    </span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             MESSAGE INPUT
+        =================================================== -->
+
+        <section class="input-section">
+
+            <textarea
+                id="messageInput"
+                placeholder="Paste message contents or URL snippet..."
+                spellcheck="false">
+            </textarea>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             ANALYZE BUTTON
+        =================================================== -->
+
+        <button
+            id="analyzeBtn"
+            class="analyze-button">
+
+            <span id="buttonText">
+                Analyze Threat Signals
+            </span>
+
+            <span
+                id="loadingSpinner"
+                class="spinner hidden">
+            </span>
+
+        </button>
+
+
+
+        <!-- ==================================================
+             RESULT AREA
+        =================================================== -->
+
+        <section
+            id="resultArea"
+            class="result-area hidden">
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ======================================================
+         JAVASCRIPT
+    ======================================================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
